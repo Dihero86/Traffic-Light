@@ -10,3 +10,79 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+.app{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.trafficlighttop{
+    background-color: black;
+    height: 100px;
+    width: 20px;
+    margin:auto;
+}
+
+.trafficlightbody{
+    background-color: black;
+    width: 150px;
+    border-radius: 10px;
+    z-index: -1;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+
+.redlight,.yellowlight,.greenlight{
+    cursor: pointer;
+} 
+
+.redlight{
+    background-color: red;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    margin:auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.yellowlight{
+    background-color: yellow;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    margin:auto;
+    margin-bottom: 10px;
+}
+
+.greenlight{
+    background-color: green;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    margin:auto;
+    margin-bottom: 10px;
+}
+
+.purplelight{
+    background-color: rgb(128, 0, 122);
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    margin:auto;
+    margin-bottom: 10px;
+}
+
+
+.selected{
+    box-shadow: 0px 0px 30px 10px  rgba(255, 174, 0, 0.863);
+}
+
+.addButton{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
