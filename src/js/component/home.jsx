@@ -14,8 +14,8 @@ const Home = () => {
 	}
 
 	const [color, setColor] = useState(colores);
-	const [add, setAdd] = useState("");
-
+	const [add,setAdd] = useState(false);
+	
 	useEffect(() => {
 		setColor({ ...colores, green: "selected" })
 	}, [])
@@ -27,10 +27,10 @@ const Home = () => {
 				<div className={"redlight " + color.red} onClick={() => setColor({ ...colores, red: "selected" })}></div>
 				<div className={"yellowlight " + color.yellow} onClick={() => setColor({ ...colores, yellow: "selected" })}> </div>
 				<div className={"greenlight " + color.green} onClick={() => setColor({ ...colores, green: "selected" })}></div>
-				<div className={add + color.purple} onClick={() => setColor({ ...colores, purple: "selected" })}></div>
+				{add ? <div className={"purplelight " + color.purple} onClick={() => setColor({ ...colores, purple: "selected" })}></div>:null}
 			</div>
 			<div className="addButton">
-				<button onClick={() => setAdd("purplelight ")} >Agregar Luz</button>
+				<button onClick={() => setAdd(true)} >Agregar Luz</button>
 			</div>
 		</div>
 
